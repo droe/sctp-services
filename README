@@ -1,0 +1,14 @@
+These dummy SCTP services are designed to be run using daemon(1), for example
+through /etc/rc.local, as was done on scanme.roe.ch:
+
+/usr/sbin/daemon -c -f -p /var/run/sctp-httpd.pid /usr/local/sbin/sctp-httpd
+/usr/sbin/daemon -c -f -p /var/run/sctp-smtpd.pid /usr/local/sbin/sctp-smtpd
+/usr/sbin/daemon -c -f -p /var/run/sctp-echod.pid /usr/local/sbin/sctp-echod
+/usr/sbin/daemon -c -f -p /var/run/sctp-discardd.pid /usr/local/sbin/sctp-discardd
+
+Both /etc/rc.local and daemon(1) are BSD specific.  If anyone on e.g. Linux
+is interested, adding some portable code to detach from tty and write a pid
+file is simple and I'll happily do that if it would be useful to someone.
+
+-- Daniel Roethlisberger <daniel@roe.ch>, 2011-05-09
+
