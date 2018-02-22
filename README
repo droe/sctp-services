@@ -12,3 +12,9 @@ file is simple and I'll happily do that if it would be useful to someone.
 
 -- Daniel Roethlisberger <daniel@roe.ch>, 2011-05-09
 
+
+This code was originally published only in a private repository for Nmap
+developers, but given that this code could be useful beyond Nmap I decided to
+make it public under dual BSD-license and original Nmap licensing terms.
+
+-- Daniel Roethlisberger <daniel@roe.ch>, 2018-02-22
