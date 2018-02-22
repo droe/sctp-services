@@ -26,6 +26,10 @@
 #define SERVICE_USER	"nobody"
 #define SERVICE_JAIL	"/var/empty"
 
+#ifndef INFTIM
+#define INFTIM -1
+#endif
+
 /*
  * Beware:  This is by no means production quality code!
  * Even though the service runs chrooted and as an unprivileged
